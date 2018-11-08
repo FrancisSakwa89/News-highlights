@@ -1,5 +1,5 @@
 from flask import render_template
-from app import app
+from . import main
 
 # Views
 @app.route('/')
@@ -26,5 +26,5 @@ def movie(news_id):
     '''
     View movie page function that returns the news details page and its data
     '''
-    return render_template('movie.html',id = news_id)
+    return render_template('movie.html',id = new_id)
     
