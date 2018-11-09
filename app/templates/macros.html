@@ -3,12 +3,12 @@
     {% for new in news_list %}
     <div class="col-md-4">
         <div class="thumbnail">
-            <div class="card-header" style="background-color: #4D243D;" >
-                <h3 style="text-align:center; color:whitesmoke;">{{ new.source}}</h3>
+            <div class="card-header">
+                <h3>{{ new.source}}</h3>
             </div>
-            <h6 style="font-size: 1.3em; background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdVIQhD-mS-aJVck44dBJjHZj-oYYkV48IRKY8gEKd_0p3DLzcQ");"><b>{{ new.description }}</b></h6>
+            <h6><b>{{ new.description }}</b></h6>
             <hr>
-            <a href="/news/{{new.id}}"><button style = "color:black;background-color:green;">News Details</button></a>
+            <a href="/news/{{new.id}}"><button >News Details</button></a>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
     {% for article in articles_list %}
 
     <div class="col-md-3">
-        <div class="thumbnail" style="padding:10px;">
+        <div class="thumbnail">
             <div class="card-header-default">
 
             </div>
@@ -37,4 +37,14 @@
         </div>
     </div>
 </div>
-{% endfor %} {% endmacro %}
+<!-- Displaying reviews macro -->
+{% macro displayReviews(review_list) %}
+    {% for review in review_list %}
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+        <h2> {{ review.title}} </h2>
+        <p> {{ review.review | truncate(30) }}</p>
+    </div>
+    {% endfor %}
+{% endmacro %}
+{% endfor %} 
+{% endmacro %}

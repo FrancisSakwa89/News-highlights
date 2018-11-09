@@ -26,3 +26,16 @@ def news(id):
 
     final_articles = get_articles(id)
     return render_template('news.html',final_articles = final_articles )  
+
+
+# @main.route('/news/<int:id>')
+# def news(id):
+
+#     '''
+#     View news page function that returns the news details page and its data
+#     '''
+#     movie = get_news(id)
+#     title = f'{news.title}'
+#     reviews = Review.get_reviews(news.id)
+
+#     return render_template('news.html',final_articles = final_articles)    
