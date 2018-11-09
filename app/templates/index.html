@@ -11,10 +11,19 @@
 {% extends 'base.html'%} {% import 'macros.html' as macro%}
 
 <body>
+
+  <!-- Styles block -->
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+
     {% block content %}
 
     <div class="jumbotron" >
-        <h3 style="text-align:center;">WELCOME TO BEST NEWS CENTER WELCOME !!!</h3>
+        <h3 style="text-align:center;">WELCOME TO FRANCO NEWS CENTER WELCOME !!!</h3>
         <p style="text-align:center;">Select your favorite news and view them</p>
     </div>
     <ul>
