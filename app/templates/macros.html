@@ -3,12 +3,12 @@
     {% for new in news_list %}
     <div class="col-md-4">
         <div class="thumbnail">
-            <div class="card-header" style="background-color:#EDEDEE; padding:6px; ">
+            <div class="card-header" >
                 <h3 style="text-align:center;">{{ new.source}}</h3>
             </div>
             <h6><b>{{ new.description }}</b></h6>
             <hr>
-            <a href="/news/{{new.id}}"><button style="color:black;background-color:aqua">view</button></a>
+            <a href="/news/{{new.id}}"><button style="color:black;background-color:green;">News Details</button></a>
         </div>
     </div>
 
