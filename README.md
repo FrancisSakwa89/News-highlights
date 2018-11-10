@@ -79,4 +79,5 @@ As a user I would like to:
 * Flask
 
 ## License
-MIT &copy;2018 [Francis Sakwa](https://github.com/FrancisSakwa89/)
+[MIT License](https://choosealicense.com/licenses/mit/#) copy;2018 [Francis Sakwa](https://github.com/FrancisSakwa89/)
+    
