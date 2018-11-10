@@ -5,20 +5,27 @@
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic%7CInconsolata:italic%7CDroid+Sans">
 {% endblock %}
-
+    <div class="well" style="background-color: chartreuse;">
 {% block content %}
 
-    <div class="jumbotron">
-    <h3>WELCOME TO FRANCO NEWS CENTER!!</h3>
-    <p>Select your favourite news and view them in details</p>
+    <div class="jumbotron" style="text-align: center;background-color:#660000;">
+    <h3 style="color: white;">WELCOME TO FRANCO NEWS CENTER!!</h3>
+    <p style="color: white;">Select your favourite news and view them in details</p>
+     <div class="container">
+            <form class="jane" style="width: 40%;height: 60%;margin-left: 30%;">
+                    <input type="text" name="news_query" placeholder="Search for a News" class="form-control">
+                    <input type="submit"  value="Submit" class="btn btn-default">
+                </form>
     </div>
 
-
+  </div>
+  <div>
     <ul>
     {{ macro.displaySourceList(news) }}
     </ul>
 {% endblock%}
 
-
+</div>
   
