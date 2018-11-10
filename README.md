@@ -7,7 +7,7 @@
 ## Description
 News-Highlights is a Python news application which brings you all the news sources World wide and the top headlines. Clicking on the link provided under the news source will lead the user to the articles of the source. It achieves this by using the [News API](https://newsapi.org/).
 
-You can view the site at: 
+You can view the site at: https://git.heroku.com/news-highlights-5.git
 
 ## User Stories
 These are the behaviours that the application implements to be used by a user.
@@ -79,4 +79,4 @@ As a user I would like to:
 * Flask
 
 ## License
-MIT &copy;2018 [Francis Sakwa](https://github.com/jeffmusa/)
+MIT &copy;2018 [Francis Sakwa](https://github.com/FrancisSakwa89/)
